@@ -9,12 +9,12 @@ class ArtistsController < ApplicationController
     @artist = Artist.find(params[:id])
   end
 
-  # def create
-  #   @artist = Artist.new(artist_params)
-  # end
+  def update
+    @artist = Artist.find(params[:id])
+  end
 
   private
   def artist_params
-    params.require(:artist).permit(:first_name, :last_name, :artist_name, :biography)
+    params.require(:artist).permit(:first_name, :last_name, :artist_name, :biography, :artist_id)
   end
 end

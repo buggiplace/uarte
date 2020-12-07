@@ -19,12 +19,39 @@ Artwork.destroy_all
 
 puts "Old Seeds destroyed"
 
+puts 'Create Artworks'
+
 puts 'Create 1 artist'
-kkart = Artist.create!(first_name: 'Klaus',
+uarte = Artist.create!(first_name: 'Klaus',
                      last_name: 'Klausinger',
                      artist_name: 'KK ART',
                      biography: "A long life")
 
+
+
 puts 'Create Artworks'
+artwork1 = Artwork.create!(title: 'HuiBu',
+                     image_url: 'http://via.placeholder.com/300',
+                     description: 'long description',
+                     artist_id: uarte.id
+                     )
 
+artwork2 = Artwork.create!(title: 'HuiBu2',
+                     image_url: 'http://via.placeholder.com/300',
+                     description: 'long description even longer2',
+                     artist_id: uarte.id
+                     )
 
+artwork3 = Artwork.create!(title: 'HuiBu3',
+                     image_url: 'http://via.placeholder.com/300',
+                     description: 'long description even longer 4',
+                     artist_id: uarte.id
+                     )
+
+artwork4 = Artwork.create!(title: 'HuiBu4',
+                     image_url: 'http://via.placeholder.com/300',
+                     description: 'long description even longer 4',
+                     artist_id: uarte.id
+                     )
+
+puts "one artwork created"
