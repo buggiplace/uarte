@@ -22,7 +22,7 @@ puts "Old Seeds destroyed"
 puts 'Create Artworks'
 
 puts 'Create 1 artist'
-uarte = Artist.create!(first_name: 'Klaus',
+uarte = Artist.create!(first_name: 'Klais',
                      last_name: 'Klausinger',
                      artist_name: 'KK ART',
                      biography: "A long life")
@@ -32,26 +32,30 @@ uarte = Artist.create!(first_name: 'Klaus',
 puts 'Create Artworks'
 artwork1 = Artwork.create!(title: 'HuiBu',
                      image_url: 'http://via.placeholder.com/300',
-                     description: 'long description',
-                     artist_id: uarte.id
+                     description: 'Something nice in a hand',
+                     artist_id: uarte.id,
+                     artwork_type: "Wood"
                      )
 
 artwork2 = Artwork.create!(title: 'HuiBu2',
                      image_url: 'http://via.placeholder.com/300',
-                     description: 'long description even longer2',
-                     artist_id: uarte.id
+                     description: 'Some red, some yellow, some blue',
+                     artist_id: uarte.id,
+                     artwork_type: "Acryl"
                      )
 
 artwork3 = Artwork.create!(title: 'HuiBu3',
                      image_url: 'http://via.placeholder.com/300',
-                     description: 'long description even longer 4',
-                     artist_id: uarte.id
+                     description: 'A colorful picture',
+                     artist_id: uarte.id,
+                     artwork_type: "Color"
                      )
 
 artwork4 = Artwork.create!(title: 'HuiBu4',
                      image_url: 'http://via.placeholder.com/300',
-                     description: 'long description even longer 4',
-                     artist_id: uarte.id
+                     description: 'A beautiful chair',
+                     artist_id: uarte.id,
+                     artwork_type: "Furniture"
                      )
 
-puts "one artwork created"
+puts "artworks created"

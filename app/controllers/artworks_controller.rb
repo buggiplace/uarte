@@ -1,6 +1,7 @@
 class ArtworksController < ApplicationController
   def index
     @artworks = Artwork.all
+    # @artist = @artworks.artist_id.artist_name
   end
 
   def show
