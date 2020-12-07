@@ -28,4 +28,3 @@ kkart = Artist.create!(first_name: 'Klaus',
 puts 'Create Artworks'
 
 
-

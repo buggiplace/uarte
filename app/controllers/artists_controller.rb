@@ -2,16 +2,16 @@ class ArtistsController < ApplicationController
 
 
   def index
-    @artworks = Artist.all
-  end
-
-  def create
-    @artist = Artist.new(artist_params)
+    @artists = Artist.all
   end
 
   def show
     @artist = Artist.find(params[:id])
   end
+
+  # def create
+  #   @artist = Artist.new(artist_params)
+  # end
 
   private
   def artist_params

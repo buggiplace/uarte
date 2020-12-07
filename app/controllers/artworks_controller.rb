@@ -7,9 +7,9 @@ class ArtworksController < ApplicationController
     @artwork = Artwork.find(params[:id])
   end
 
-  def create
-    @artwork = Artwork.new(artwork_params)
-  end
+  # def create
+  #   @artwork = Artwork.new(artwork_params)
+  # end
 
 private
   def artwork_params
