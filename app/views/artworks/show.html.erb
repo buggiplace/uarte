@@ -1,0 +1,12 @@
+<h1>Artworks#show</h1>
+<p>Find me in app/views/artworks/show.html.erb</p>
+
+<div>
+  <%= @artwork.title %>
+  <%= @artwork.image_url %>
+  <%= @artwork.artwork_type %>
+  <%= @artwork.description %>
+</div>
+
+<%= link_to "Back to overview", artworks_path, class: "btn btn-primary" %>
+<%= link_to "Back to home", root_path, class: "btn btn-primary" %>
