@@ -6,12 +6,12 @@
   <%= @artwork.image_url %>
   <%= @artwork.artwork_type %>
   <%= @artwork.description %>
-  <% @artwork.photos.each do |picture| %>
-       <%=  cl_image_tag(picture.key, :transformation=>[
-        {:width=>1000, :height=>800, :crop=>"limit"}
-        ]) %>
-  <% end %>
+  <%= cl_image_tag @artwork.photo.key %>
 </div>
+
 
 <%= link_to "Back to overview", artworks_path, class: "btn btn-primary" %>
 <%= link_to "Back to home", root_path, class: "btn btn-primary" %>
+
+
+
