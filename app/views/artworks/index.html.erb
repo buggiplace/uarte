@@ -6,8 +6,8 @@
           <% @artworks.each do |art| %>
           <%= link_to artwork_path(art) do%>
             <div class="flip">
-                <div class="front" style="background-image: url(<%= cl_image_path art.photo.key, height: 400, width: 800, crop: :pad  %>)">
-                   <h1 class="text-shadow"><%= art.title %></hi>
+                  <div class="front" style="background-image: url(<%= cl_image_path art.photo.key, height: 400, width: 800, crop: :pad  %>)">
+                   <!-- <h1 class="text-shadow"><%#= art.title %></hi> -->
                 </div>
                 <div class="back">
                    <h2><%= art.title %></h2>
