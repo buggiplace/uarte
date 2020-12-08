@@ -3,10 +3,14 @@
 
 <div>
   <%= @artwork.title %>
-  <%= @artwork.image_url %>
   <%= @artwork.artwork_type %>
   <%= @artwork.description %>
+  <%= cl_image_tag @artwork.photo.key, height: 400, width: 800, crop: :pad %>
 </div>
+
 
 <%= link_to "Back to overview", artworks_path, class: "btn btn-primary" %>
 <%= link_to "Back to home", root_path, class: "btn btn-primary" %>
+
+
+

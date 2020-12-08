@@ -1,16 +1,26 @@
 <h1>Artworks#index</h1>
 <p>Find me in app/views/artworks/index.html.erb</p>
 
-<div>
-  <% @artworks.each do |art| %>
-  <div>
+<div class="container">
+  <div class="cards">
+    <% @artworks.each do |art| %>
     <%= link_to artwork_path(art) do%>
-    <%= art.title %>
-    <%= art.description %>
-    <%= art.artist.artist_name %>
+    <div class="card-category" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path art.photo.key, height: 400, width: 800, crop: :pad  %>)'>
+      <div class="card-category-content">
+        <h2><%= art.title %></h2>
+        <p><%= art.description %></p>
+        <p><%= art.artist.artist_name %></p>
+      </div>
+    </div>
+    <% end %>
+    <% end %>
   </div>
-<% end  %>
-<% end  %>
+</div>
 
 
 <%= link_to "Back to home", root_path, class: "btn btn-primary" %>
+
+
+
+
+

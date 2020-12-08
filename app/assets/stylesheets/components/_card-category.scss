@@ -1,0 +1,43 @@
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-category-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.card-category-content h2 {
+  font-size: 1rem;
+}
+
+.card-category-content p {
+  font-size: 1rem;
+}
+
+
+// .card-category-content:hover {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+// }
+
+// deletes the text decoration of the whole card which is a link
+.cards a:hover {
+  text-decoration: none;
+}
