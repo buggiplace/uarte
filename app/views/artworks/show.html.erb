@@ -6,6 +6,11 @@
   <%= @artwork.image_url %>
   <%= @artwork.artwork_type %>
   <%= @artwork.description %>
+  <% @artwork.photos.each do |picture| %>
+       <%=  cl_image_tag(picture.key, :transformation=>[
+        {:width=>1000, :height=>800, :crop=>"limit"}
+        ]) %>
+  <% end %>
 </div>
 
 <%= link_to "Back to overview", artworks_path, class: "btn btn-primary" %>
