@@ -4,9 +4,15 @@
 @import "navbar";
 
 // Cards
-@import "cards-grid";
 @import "card-category";
 @import "card-trip";
 @import "card-product";
+
+@import "cards-grid-lw";
+@import "cards-grid-flip";
+
+
+//buttons
+@import "buttons";
 
 

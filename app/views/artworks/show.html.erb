@@ -1,16 +1,57 @@
-<h1>Artworks#show</h1>
-<p>Find me in app/views/artworks/show.html.erb</p>
+<div class="container">
+  <div class="product-image">
+    <img src="<%= cl_image_path @artwork.photo.key, height: 400, width: 300, crop: :pad %>" alt="" class="product-pic">
+    <img src="https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414139/Uarte/uarte_signum_qs_rr30q2.png" alt="" class="product-logo">
+<!--     <div class="dots">
+      <a href="#!" class="active"><i>1</i></a>
+      <a href="#!"><i>2</i></a>
+      <a href="#!"><i>3</i></a>
+      <a href="#!"><i>4</i></a>
+    </div> -->
+  </div>
 
-<div>
-  <%= @artwork.title %>
-  <%= @artwork.artwork_type %>
-  <%= @artwork.description %>
-  <%= cl_image_tag @artwork.photo.key, height: 400, width: 800, crop: :pad %>
+  <div class="product-details">
+    <header>
+      <h1 class="title"><%= @artwork.title %></h1>
+      <span class="colorCat"><%= @artwork.short_description %></span>
+      <span class="colorCat"><%= @artwork.artwork_type %></span>
+
+<!--       <div class="price">
+        <span class="before">$150</span>
+        <span class="current">$144.99</span>
+      </div> -->
+      <div class="rate">
+        <span class="colorCat"><%= @artwork.artist.artist_name %></span>
+<!--         <a href="#!" class="active">★</a>
+        <a href="#!" class="active">★</a>
+        <a href="#!" class="active">★</a>
+        <a href="#!">★</a>
+        <a href="#!">★</a> -->
+      </div>
+    </header>
+    <article>
+      <h5>Beschreibung</h5>
+      <p><%= @artwork.description %></p>
+    </article>
+    <div class="controls">
+      <div class="size contentspecs">
+        <h5>Größe</h5>
+        <p><%= @artwork.size %></p>
+      </div>
+       <div class="size contentspecs">
+        <h5>Eigenschaften</h5>
+        <p><%= @artwork.specifications %></p>
+      </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-
-<%= link_to "Back to overview", artworks_path, class: "btn btn-primary" %>
-<%= link_to "Back to home", root_path, class: "btn btn-primary" %>
-
-
-
+<!-- <div class="container">
+  <%#= cl_image_tag @artwork.photo.key, height: 800, width: 600, crop: :pad %>
+</div> -->
+<div class="container d-flex justify-content-center">
+  <%= link_to "Back to overview", artworks_path, class: "btn btn-ghost" %>
+  <%= link_to "Back to home", root_path, class: "btn btn-ghost" %>
+</div>
