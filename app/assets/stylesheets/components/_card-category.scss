@@ -28,3 +28,16 @@
 .card-category-content p {
   font-size: 1rem;
 }
+
+
+// .card-category-content:hover {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+// }
+
+// deletes the text decoration of the whole card which is a link
+.cards a:hover {
+  text-decoration: none;
+}
