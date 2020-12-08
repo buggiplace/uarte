@@ -31,9 +31,10 @@ uarte = Artist.create!(first_name: 'Klaus',
 
 puts 'Create Artworks'
 artwork1 = Artwork.create!(title: 'Rizzy',
-                     description: 'Something nice in a hand',
+                     short_description: 'Something nice in a hand',
+                     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                      artist_id: uarte.id,
-                     artwork_type: "Wood"
+                     artwork_type: "Wood",
                      )
 
 file01 = URI.open('https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414213/Uarte/01-Rizzi_fgoaqr.jpg')
@@ -42,27 +43,36 @@ artwork1.photo.attach(io: file01, filename: '01-rizzi.jpg', content_type: 'image
 
 
 artwork2 = Artwork.create!(title: 'Rizzi',
-                     description: 'Some red, some yellow, some blue',
+                     short_description: 'Some red, some yellow, some blue',
+                     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                      artist_id: uarte.id,
-                     artwork_type: "Acryl"
+                     artwork_type: "Acryl",
+                     specifications: "Holz, Kunstharzlack, Blattgold, Blattsilber",
+                     size: "hbt: 85 x 80 x 6 cm",
                      )
 
 file02 = URI.open('https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414208/Uarte/02-Untiteled_pudtyx.jpg')
 artwork2.photo.attach(io: file02, filename: '02-Untitled', content_type: 'image/jpg')
 
 artwork3 = Artwork.create!(title: 'Untitled',
-                     description: 'A colorful picture',
+                     short_description: 'A colorful picture',
+                     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                      artist_id: uarte.id,
-                     artwork_type: "Color"
+                     artwork_type: "Color",
+                     specifications: "Holz, Kunstharzlack, Blattgold, Blattsilber",
+                     size: "hbt: 85 x 80 x 6 cm",
                      )
 
-file03 = URI.open('https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414210/Uarte/03-Gold_aefeo5.jpg')
+file03 = URI.open('https://res.cloudinary.com/dvoduvlcz/image/upload/v1607439637/Uarte/03-Gold_gzk3oc.png')
 artwork3.photo.attach(io: file03, filename: '03-Gold.jpg', content_type: 'image/jpg')
 
 artwork4 = Artwork.create!(title: 'Gold',
-                     description: 'A beautiful chair',
+                     short_description: 'A beautiful chair',
+                     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                      artist_id: uarte.id,
-                     artwork_type: "Furniture"
+                     artwork_type: "Furniture",
+                     specifications: "Holz, Kunstharzlack, Blattgold, Blattsilber",
+                     size: "hbt: 85 x 80 x 6 cm",
                      )
 
 file04 = URI.open('https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414214/Uarte/04-Seasons_whizd5.jpg')
