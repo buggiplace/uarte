@@ -37,7 +37,7 @@ artwork1 = Artwork.create!(title: 'Rizzy',
                      artwork_type: "Wood",
                      )
 
-file01 = URI.open('https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414213/Uarte/01-Rizzi_fgoaqr.jpg')
+file01 = URI.open('https://res.cloudinary.com/dvoduvlcz/image/upload/v1607452466/Uarte/01-Rizzi_j58aor.png')
 artwork1.photo.attach(io: file01, filename: '01-rizzi.jpg', content_type: 'image/jpg')
 
 
@@ -51,7 +51,7 @@ artwork2 = Artwork.create!(title: 'Rizzi',
                      size: "hbt: 85 x 80 x 6 cm",
                      )
 
-file02 = URI.open('https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414208/Uarte/02-Untiteled_pudtyx.jpg')
+file02 = URI.open('https://res.cloudinary.com/dvoduvlcz/image/upload/v1607452247/Uarte/02-Untiteled_oyctwz.png')
 artwork2.photo.attach(io: file02, filename: '02-Untitled', content_type: 'image/jpg')
 
 artwork3 = Artwork.create!(title: 'Untitled',
@@ -75,7 +75,7 @@ artwork4 = Artwork.create!(title: 'Gold',
                      size: "hbt: 85 x 80 x 6 cm",
                      )
 
-file04 = URI.open('https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414214/Uarte/04-Seasons_whizd5.jpg')
+file04 = URI.open('https://res.cloudinary.com/dvoduvlcz/image/upload/v1607452251/Uarte/04-Seasons_dsot66.png')
 artwork4.photo.attach(io: file04, filename: '04-Seasons.jpg', content_type: 'image/jpg')
 
 
