@@ -3,10 +3,9 @@
 
 <div>
   <%= @artwork.title %>
-  <%= @artwork.image_url %>
   <%= @artwork.artwork_type %>
   <%= @artwork.description %>
-  <%= cl_image_tag @artwork.photo.key %>
+  <%= cl_image_tag @artwork.photo.key, height: 400, width: 800, crop: :pad %>
 </div>
 
 
