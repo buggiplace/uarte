@@ -1,7 +1,22 @@
-<h1>Pages#home</h1>
+<!-- <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+ -->
 
 
-<%= link_to "See all artworks", artworks_path, class: "btn btn-primary" %>
+<!-- below worked with _home scss  -->
+<!--     <div>
+      <%#= image_tag "https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414140/Uarte/uarte_signum_ql_cjaq4n.png", class: "pulse home-icon" %>
+    </div> -->
 
-
+<!-- <div class="home"> -->
+<div class="home-adjust">
+    <div class="d-flex justify-content-center align-items-center flex-column">
+          <div class="logo-home">
+            <%= link_to image_tag("https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414140/Uarte/uarte_signum_ql_cjaq4n.png"), artworks_path %>
+          </div>
+          <div class="home-button">
+              <%= link_to "Enter Uarte", artworks_path, class: "btn btn-ghost-home" %>
+          </div>
+    </div>
+</div>
+<!-- </div> -->
