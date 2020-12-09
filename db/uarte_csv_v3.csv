@@ -1,5 +1,8 @@
-title,artwork_type,short_description,description,specifications,size,picture_url,artist_id
+title,artwork_type,short_description,description,specifications,size,picture_url,artist_id:
 Rizzi,Rahmen,"James Rizzi fand den Rahmen einst so nett, daß er ihn kaufen wollte",,"Holz, Kunstharzlack, Blattgold, Blattsilber",hbt: 85 x 80 x 6 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1607452466/Uarte/01-Rizzi_j58aor.png,uarte.id
+Gold,Rahmen,,"Salvadores Kartenspiel sah sich unterrepräsentiert - voilá! auch wenn gewisse Leute aus dem Vogelsberg meinen, daß links unten das sei eine Seifenschale, es ist keine!",Blattgold auf Holz,hbt: 114 x 77 x 10 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1607439637/Uarte/03-Gold_gzk3oc.png,uarte.id
+Untitled,Rahmen,,"des einen Leid, des anderen Freud´ - wer sich von der festen Basis entfernt, lebt gefährlich","Holz, Kunstharzlack, Geduld, Blattgold",hb: 135 x 76 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1607452247/Uarte/02-Untiteled_oyctwz.png,uarte.id
+Four Seasons,Wandobjekt,,"wer möchte, kann nun die Jahreszeiten zu Hause nach Gutdünken arrangieren - auf den Herbst folgt der Frühling ... usw. ""4 seasons"" heißt das Ensemble",Kunstharzlack auf vier einzelnen Holzfeldern,jeweils 30x30 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1607452251/Uarte/04-Seasons_dsot66.png,uarte.id
 Kommode,,Geschenk an die Begleiterin der Nacht,,"Holz, Acryllack, Glas, (gepimpter Sperrmüllfund)
 
 ",,http://uarte.de/fotos_kunst/web_39_kommode.jpg,uarte.id
@@ -11,8 +14,6 @@ Applik Blau Blau,Applik,,wohin mit den eiligen Utensilien des täglichen Lebens?
 Ou est josephine,Wandobjekt,,cést une recamière? une chaiselongue? Wurscht! - Elle a disparu. Und wir nutzen die Gunst der Sekunde und werfen verstohlen ein paar Blicke auf das angewärmte Polster,"Holz, Blattgold, Kunstharzlack",ca. 22 x 13 cm,http://uarte.de/fotos_kunst/web_21_ou_est_josephine.jpg,uarte.id
 Fly Away,Applik,manchmal will man nur noch weg ...,,"Holz, Kunstharzlack, Spielzeugflugzeug",,http://uarte.de/fotos_kunst/web_11_fly_away.jpg,uarte.id
 Ich,,Der Täter und sein Opfer,,,180 x106 x 65,http://uarte.de/fotos_kunst/web_mitholz_2.jpg,uarte.id
-Untitled,Rahmen,,"des einen Leid, des anderen Freud´ - wer sich von der festen Basis entfernt, lebt gefährlich","Holz, Kunstharzlack, Geduld, Blattgold",hb: 135 x 76 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1607452247/Uarte/02-Untiteled_oyctwz.png,uarte.id
-Four Seasons,Wandobjekt,,"wer möchte, kann nun die Jahreszeiten zu Hause nach Gutdünken arrangieren - auf den Herbst folgt der Frühling ... usw. ""4 seasons"" heißt das Ensemble",Kunstharzlack auf vier einzelnen Holzfeldern,jeweils 30x30 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1607452251/Uarte/04-Seasons_dsot66.png,uarte.id
 Applik Blau Rot,Applik,,wohin mit den eiligen Utensilien des täglichen Lebens?,,hbt: 21 x 11 x 9 cm,http://uarte.de/fotos_kunst/web_45_applik_blau_rot.jpg,uarte.id
 Sinus,Wandobjekt,"""=$E$1*SIN($E$3*(A8))+$E$2""",,"Holz, Acryllack",hb: 77 x 77 cm,http://uarte.de/fotos_kunst/web_38_sinus.jpg,uarte.id
 Central Park,Rahmen,,"Gewusel, Radusel, Chaotizismus trifft auf rechte Ecken","Holz, Acryllack","hb: 105 x 85 cm
@@ -22,7 +23,6 @@ Gelb Grüner Stuhl,Wandobjekt,"Wächter von Vor-, Haupt- und Nachspeise",,"16 qu
 
 ",hb: 107 x 107 cm,http://uarte.de/fotos_kunst/web_24_gelb_gruener_stuhl.jpg,uarte.id
 Applik mit Gans,Applik,von hier oben kann unsere Gans sich mal umkucken,,,hbt: 29 x 25 13 cm,http://uarte.de/fotos_kunst/web_54_applik_mit_gans.jpg,uarte.id
-Gold,Rahmen,,"Salvadores Kartenspiel sah sich unterrepräsentiert - voilá! auch wenn gewisse Leute aus dem Vogelsberg meinen, daß links unten das sei eine Seifenschale, es ist keine!",Blattgold auf Holz,hbt: 114 x 77 x 10 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1607439637/Uarte/03-Gold_gzk3oc.png,uarte.id
 ,Applik,,wohin mit den eiligen Utensilien des täglichen Lebens? Schicke Applicke? hier liegt ein Brille drauf,,hbt: 20 x 17 x 6 cm,http://uarte.de/fotos_kunst/web_46_applik_gelb_gruen.jpg,uarte.id
 Zack,Wandobjekt,,"wenn über der Küchentüre „zack“ hängt, heißt das noch lange nicht, daß es hier zackig zugeht","Blattsilber, klarlackiert auf Holz",hb: 36 x 67 cm,http://uarte.de/fotos_kunst/web_13_zack.jpg,uarte.id
 Griffliches,Treppengeländer,was ist eine Treppe ohne ihr Geländer,,,,http://uarte.de/fotos_kunst/web_14_treppengelaender.jpg,uarte.id
