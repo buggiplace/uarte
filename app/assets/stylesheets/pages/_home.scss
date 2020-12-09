@@ -1,3 +1,146 @@
-// a:hover {
-//   text-decoration: none;
+// body {
+//   align-items: center;
+//   background: #222;
+//   display: flex;
+//   height: 100%;
+//   justify-content: center;
+//   margin: 0;
 // }
+
+// .home {
+//   align-items: center;
+//   background: #222;
+//   display: flex;
+//   height: 100%;
+//   justify-content: center;
+//   margin: 0;
+// }
+
+
+// html {
+//   height: 100%;
+// }
+
+.home-button {
+  margin-top: 100px;
+}
+
+
+.home-adjust {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.logo-home {
+  height: 400px;
+  position: relative;
+  width: 400px;
+}
+
+.logo-home img {
+  border-radius: 9999px;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+// original
+// @keyframes cycle-colors {
+//   0% { border-color: hsl(0, 100%, 50%); }
+//   25% { border-color: hsl(90, 100%, 50%); }
+//   50% { border-color: hsl(180, 100%, 50%); }
+//   75% { border-color: hsl(270, 100%, 50%); }
+//   100% { border-color: hsl(360, 100%, 50%); }
+// }
+
+@keyframes cycle-colors {
+  0% { border-color: red; }
+  25% { border-color: yellow; }
+  50% { border-color: green; }
+  75% { border-color: blue; }
+  100% { border-color: red; }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.logo-home::before,
+.logo-home::after {
+  animation: pulse 2s linear infinite;
+  border: #fff solid 8px;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  content: ' ';
+  height: 140%;
+  left: -20%;
+  opacity: .6;
+  position: absolute;
+  top: -20%;
+  transform: scale(0.714);
+  width: 140%;
+  z-index: 1;
+}
+
+.logo-home::after {
+  animation-delay: 1s;
+}
+
+// .logo-home:hover img {
+//   content: url('http://s.blixt.org/hypnotoad.jpg');
+// }
+
+.logo-home:hover::before,
+.logo-home:hover::after {
+  animation: pulse 1s linear infinite, cycle-colors 6s linear infinite;
+}
+
+.logo-home:hover::after {
+  animation-delay: .5s;
+}
+
+
+
+
+// below worked
+
+// .pulse {
+//   margin:100px;
+//   display: block;
+//   width: 30%;
+//   height: 30%;
+//   border-radius: 50%;
+//   background: transparent;
+//   cursor: pointer;
+//   // box-shadow: 0 0 0 black;
+//   animation: pulse 1800ms infinite;
+// }
+// .pulse:hover {
+//   animation: none;
+// }
+
+// @keyframes pulse {
+//   0% {
+//     -moz-box-shadow: 0 0 0 0 rgba(255,0,0, 0.1);
+//     // box-shadow: 0 0 0 0 rgba(255,0,0, 0.1);
+//     background-color: rgba(255,0,0, 0.0);
+//   }
+//   50% {
+//       -moz-box-shadow: 0 0 0 5px rgba(255,0,0, 0.1);
+//       // box-shadow: 0 0 0 5px rgba(255,0,0, 0.1);
+//       background-color: rgba(255,0,0, 0.1);
+//   }
+//   100% {
+//       -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+//       // box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+//       background-color: rgba(255,0,0, 0.0);
+//   }
+// }
+

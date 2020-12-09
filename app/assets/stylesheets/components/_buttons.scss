@@ -12,3 +12,36 @@
   opacity: 1;
 }
 
+
+// button for home
+.btn-ghost-home {
+  color: black;
+  border: 1px solid black;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 2s ease;
+  width: 350px;
+}
+
+.btn-ghost-home:hover {
+  opacity: 1;
+  color: white;
+  background-color: black;
+  // background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  // color: transparent;
+}
+
+
+
+
+
+// effect try outs
+
+// body
+//   min-height 100vh
+//   display flex
+//   align-items center
+//   justify-content center
+
