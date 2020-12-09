@@ -1,5 +1,5 @@
-<h1>Artworks#index</h1>
-<p>Find me in app/views/artworks/index.html.erb</p>
+<!-- <h1>Artworks#index</h1>
+<p>Find me in app/views/artworks/index.html.erb</p> -->
 
   <div class="d-flex justify-content-center">
     <div class="cards-grid">
@@ -9,10 +9,14 @@
                   <div class="front" style="background-image: url(<%= cl_image_path art.photo.key, height: 400, width: 800, crop: :pad  %>)">
                    <!-- <h1 class="text-shadow"><%#= art.title %></hi> -->
                 </div>
-                <div class="back">
+                <div class="back d-flex justify-content-between">
                    <h2><%= art.title %></h2>
-                   <p><%= art.short_description %></p>
                    <%= image_tag "https://res.cloudinary.com/dvoduvlcz/image/upload/v1607449289/Uarte/uarte_signum_qs_w_ep0f1k.png" %>
+                      <% if art.short_description? %>
+                      <p><%= art.short_description %></p>
+                      <% else  %>
+                      <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit.</p>
+                      <% end  %>
                 </div>
             </div>
           <% end %>
@@ -24,7 +28,3 @@
 <div>
   <%= link_to "Back to home", root_path, class: "btn btn-primary" %>
 </div>
-
-
-
-
