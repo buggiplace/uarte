@@ -1,5 +1,23 @@
-<!-- <h1>Artworks#index</h1>
-<p>Find me in app/views/artworks/index.html.erb</p> -->
+<!-- Navigation -->
+<div class="b-nav">
+  <li><a class="b-link" href="https://github.com/mblode/burger" target="_blank">GitHub - burger</a></li>
+  <li><a class="b-link" href="https://github.com/mblode" target="_blank">Github - mblode</a></li>
+  <li><a class="b-link" href="https://codepen.io/mblode/" target="_blank">CodePen</a></li>
+  <li><a class="b-link" href="https://dribbble.com/mblode" target="_blank">Dribbble</a></li>
+</div>
+
+<!-- Burger-Icon -->
+<div class="b-container">
+  <div class="b-menu">
+<!--     <div class="b-bun b-bun--top"></div>
+    <div class="b-bun b-bun--mid"></div> -->
+    <%= image_tag "https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414139/Uarte/uarte_signum_qs_rr30q2.png" %>
+    <!-- <div class="b-bun b-bun--bottom"></div> -->
+  </div>
+
+  <!-- Burger-Brand -->
+  <a href="#" class="b-brand">Burger</a>
+</div>
 
   <div class="d-flex justify-content-center">
     <div class="cards-grid">
@@ -28,3 +46,20 @@
 <div>
   <%= link_to "Back to home", root_path, class: "btn btn-primary" %>
 </div>
+
+<script>
+  'use strict';
+
+(function() {
+  var body = document.body;
+  var burgerMenu = document.getElementsByClassName('b-menu')[0];
+  var burgerContain = document.getElementsByClassName('b-container')[0];
+  var burgerNav = document.getElementsByClassName('b-nav')[0];
+
+  burgerMenu.addEventListener('click', function toggleClasses() {
+    [body, burgerContain, burgerNav].forEach(function (el) {
+      el.classList.toggle('open');
+    });
+  }, false);
+})();
+</script>
