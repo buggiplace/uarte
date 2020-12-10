@@ -1,3 +1,9 @@
+#stickytop {
+
+}
+
+
+
 $color-stack:
   (group: primary, id: normal, color: #fff),
   (group: complement, id: normal, color: #444);
@@ -23,13 +29,14 @@ $b-border-radius: 50%; //Change the border radius of the menu
 $b-trans-speed: .4s; //Transition speed settings
 $b-transition: all $b-trans-speed ease; //Transitions
 
-$b-font-size: 24px; //Font size of brand and links
-$b-font-family: Helvetica-Neue, Helvetica, Arial, sans-serif; //Font family of the brand and links
+$b-font-size: 20px; //Font size of brand and links
+$b-font-family: "Nunito", "Helvetica", "sans-serif"; //Font family of the brand and links
 $b-font-weight: 300; //Font weight of brand and links
 $b-txt-pad: 30px; //Left padding on both brand and links
 
 $b-line-height: ($b-height / 2 - ($b-font-size / 2.8)); //Vertically centers brand to menu
-$b-txt-pad-top: ($b-margin-top + $b-height + $b-txt-pad); //Top margin for first link element
+$b-txt-pad-top: 20px;
+// $b-txt-pad-top: ($b-margin-top + $b-height + $b-txt-pad); //Top margin for first link element
 $b-bun-width-half: ($b-bun-width / 2); //Half bun width used for calculation
 $b-pad-left: ($b-height / 2 - $b-bun-width-half - 2); //Horizontally centers bun in menu
 $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in menu
@@ -60,30 +67,30 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
   box-sizing: border-box;
 }
 
-body {
-  &:after {
-    background: color(primary);
-    content: '';
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    overflow: auto;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    transition: $b-transition;
-    width: 100%;
-  }
+// body {
+//   &:after {
+//     background: color(primary);
+//     content: '';
+//     height: 100%;
+//     left: 0;
+//     opacity: 0;
+//     overflow: auto;
+//     padding: 0;
+//     position: absolute;
+//     top: 0;
+//     transition: $b-transition;
+//     width: 100%;
+//   }
 
-  &.open {
-    overflow: hidden;
-  }
+//   &.open {
+//     overflow: hidden;
+//   }
 
-  &.open:after {
-    opacity: 1;
-    visibility: visible;
-  }
-}
+//   &.open:after {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+// }
 
 .b-nav {
   position: absolute;
@@ -109,15 +116,23 @@ body {
 
   li:first-child {
     padding-top: $b-txt-pad-top;
+
   }
 
   &.open {
     visibility: visible;
+    // background-color: rgba(255,0,0,0.1);
+    background: linear-gradient(45deg, rgba(255,0,0,0.6) 0%, rgba(255,255,0,0.6) 50%);
+    text-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    border-radius:20px;
+    top: 55px;
+    left: 55px;
 
     li {
       animation-duration: $b-trans-speed;
       animation-fill-mode: both;
       animation-name: slideInLeft;
+      padding-right: 20px;
     }
   }
 }
@@ -130,7 +145,7 @@ body {
   font-size: $b-font-size;
   font-weight: $b-font-weight;
   margin-left: $b-margin-left;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: $b-transition;
   width: auto;
 
@@ -138,6 +153,7 @@ body {
   &--active {
     border-left: color(complement) solid $b-border-width;
     padding-left: $b-txt-pad;
+    color: color(complement);
   }
 }
 
@@ -155,6 +171,7 @@ body {
   user-select: none;
   width: $b-height;
   z-index: 12;
+  overflow: hidden;
 
   &:hover {
     border: color(complement) solid $b-border-width;
@@ -186,7 +203,7 @@ body {
 }
 
 .b-menu img {
-  height: 60px;
+  height: 55px;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -208,9 +225,12 @@ body {
 
 .b-container {
   height: $b-height;
-  left: $b-margin-left;
-  position: absolute;
-  top: $b-margin-top;
+  // left: $b-margin-left;
+  // position: absolute;
+  // top: $b-margin-top;
+  position: fixed;
+  top: 35px;
+  left: 35px;
 
   &:hover:not(.open) {
     .bun-top,
