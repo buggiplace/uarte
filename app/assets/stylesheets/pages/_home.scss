@@ -26,19 +26,21 @@ $size: 102px;
 //   cursor: pointer;
 // }
 
+// for js hover
 .logo-mouseover {
   fill: red;
   opacity: 1;
 }
 
 .logo-mouseout {
-  fill: $color;
+  fill: yellow;
+   opacity: 1;
 }
 
 
 .logo {
   width: 100%;
-  height: 70%;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,8 +123,13 @@ $size: 102px;
   }
 }
 
+// .icon:hover {
+//   fill: red;
+// }
 
-
+// .icon svg path:hover {
+//   fill: red;
+// }
 
 
 // BACKGROUND ANIMATION BELOW

@@ -41,6 +41,8 @@ d="M430,0H80a80,80,0,0,0,0,160H225v90H192a80,80,0,0,0,0,160h33V580a80,80,0,0,0,1
             <%= link_to image_tag("https://res.cloudinary.com/dvoduvlcz/image/upload/v1607606088/Uarte/uarte_signum_ql_cu3ug7.svg"), artworks_path %>
           </div>
 <div> -->
+
+
 <%= link_to artworks_path, class: "link-cursor" do %>
 <div class="logo">
   <svg class="icon" viewBox="-250 0 900 660">
@@ -68,11 +70,17 @@ d="M430,0H80a80,80,0,0,0,0,160H225v90H192a80,80,0,0,0,0,160h33V580a80,80,0,0,0,1
                 </svg>
             </div>
                 <%end%>
+
+<div class="d-flex justify-content-center align-items-center">
                 <div class="home-button ">
                   <%= link_to "Enter Uarte", artworks_path, class: "btn btn-ghost-home" %>
                 </div>
+</div>
 
-<div class="reload">Reload</div>
+
+
+<!-- script below selects and changes logo & text -->
+
 
 <!-- <script>
   const logohover = document.querySelector('.logo');
@@ -90,7 +98,7 @@ d="M430,0H80a80,80,0,0,0,0,160H225v90H192a80,80,0,0,0,0,160h33V580a80,80,0,0,0,1
 
 
 
-  logohover.addEventListener('mouseout', function () {
+  logohover2.addEventListener('mouseout', function () {
     let icon = document.querySelector('.icon path');
     let text = document.querySelector('.text text');
     // icon.classList.add('is-active');
@@ -100,21 +108,5 @@ d="M430,0H80a80,80,0,0,0,0,160H225v90H192a80,80,0,0,0,0,160h33V580a80,80,0,0,0,1
 });
 
 </script>
+
  -->
-<!-- <script>
-
-const reload_btn = document.querySelector('.reload');
-
-reload_btn.addEventListener('click', function () {
-   let icon = document.querySelector('.icon path');
-  let text = document.querySelector('.text text');
-
-  icon.classList.remove('is-active');
-  text.classList.remove('is-active');
-
-  setTimeout(function () {
-    icon.classList.add('is-active');
-    text.classList.add('is-active');
-  }, 500);
-});
-</script> -->
