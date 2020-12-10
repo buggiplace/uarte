@@ -1,3 +1,24 @@
+.home-background {
+  background: linear-gradient(-45deg, yellow, red, yellow, red, yellow);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
 // body {
 //   align-items: center;
 //   background: #222;
@@ -35,9 +56,9 @@
 
 
 .logo-home {
-  height: 400px;
+  height: 350px;
   position: relative;
-  width: 400px;
+  width: 350px;
 }
 
 .logo-home img {
@@ -57,12 +78,20 @@
 //   100% { border-color: hsl(360, 100%, 50%); }
 // }
 
+// @keyframes cycle-colors {
+//   0% { border-color: red; }
+//   25% { border-color: yellow; }
+//   50% { border-color: green; }
+//   75% { border-color: blue; }
+//   100% { border-color: red; }
+// }
+
 @keyframes cycle-colors {
-  0% { border-color: red; }
-  25% { border-color: yellow; }
-  50% { border-color: green; }
-  75% { border-color: blue; }
-  100% { border-color: red; }
+  0% { border-color: black; }
+  25% { border-color: gray; }
+  50% { border-color: black; }
+  75% { border-color: gray; }
+  100% { border-color: black; }
 }
 
 @keyframes pulse {
