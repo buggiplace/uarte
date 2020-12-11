@@ -6,13 +6,14 @@
   <div class="product-details">
     <header>
       <h1 class="title"><%= @artwork.title %></h1>
+      <span class="colorCat"><%= @artwork.artwork_type %></span>
       <% if @artwork.short_description? %>
-      <p><%= @artwork.description %></p>
+      <p><%= @artwork.short_description %></p>
+      <!-- <span class="colorCat"><%= @artwork.short_description %></span> -->
       <% else  %>
       <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit.</p>
       <% end  %>
-      <span class="colorCat"><%= @artwork.short_description %></span>
-      <span class="colorCat"><%= @artwork.artwork_type %></span>
+      <!-- <span class="colorCat"><%= @artwork.short_description %></span> -->
 
 <!--       <div class="price">
         <span class="before">$150</span>
@@ -52,11 +53,11 @@
   </div>
 </div>
 
-<div class="container d-flex justify-content-center align-items-center">
+<div class="container d-flex justify-content-around align-items-center">
   <% if @artwork.previous %>
     <%= link_to "zum letzten Kunstwerk: (#{@artwork.previous.title})", @artwork.previous %>
   <% end %>
-    <%= link_to "|| Zurück zur Übersicht  ||", artworks_path %>
+    <%= link_to "Zurück zur Übersicht", artworks_path %>
   <% if @artwork.next %>
     <%= link_to "zum nächsten Kunstwerk: (#{@artwork.next.title})", @artwork.next %>
   <% end %>
