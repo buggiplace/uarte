@@ -5,7 +5,8 @@ class ArtworksController < ApplicationController
   end
 
   def show
-    @artwork = Artwork.find(params[:id])
+    # @artwork = Artwork.find(params[:id])
+    @artwork = Artwork.friendly.find(params[:id])
   end
 
   # def create
@@ -17,4 +18,3 @@ private
     params.require(:artwork).permit(:title, :description, :artwork_type, :image_url, :artist_id)
   end
 end
-

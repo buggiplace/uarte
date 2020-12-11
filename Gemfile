@@ -35,6 +35,8 @@ gem 'simple_form'
 gem 'cloudinary', '~> 1.16.0'
 gem 'faker'
 
+gem 'friendly_id', '~> 5.4.0'
+
 # gem 'compass-rails'
 
 group :development, :test do
