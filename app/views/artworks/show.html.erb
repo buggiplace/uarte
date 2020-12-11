@@ -52,6 +52,15 @@
   </div>
 </div>
 
+<div class="container d-flex justify-content-center align-items-center">
+  <% if @artwork.previous %>
+    <%= link_to "< Letztes Kunstwerk -", @artwork.previous %>
+  <% end %>
+
+  <% if @artwork.next %>
+    <%= link_to "- Nächstes Kunstwerk >", @artwork.next %>
+  <% end %>
+</div>
 <!-- <div class="container">
   <%#= cl_image_tag @artwork.photo.key, height: 800, width: 600, crop: :pad %>
 </div> -->
