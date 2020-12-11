@@ -26,21 +26,9 @@ $discount: #fe6168;
     }
 }
 
-// body{
-//   background-color: $bg;
-//   height: 100vh;
-//   margin: auto;
-//   display: flex;
-//   color: $textColor;
-// }
-
-.artworkwrapper {
-  // height: 80vh;
-  // width: 100%;
-  // background-color: $bg;
-  // margin: auto;
-  // display: flex;
-  // color: $textColor;
+.product-view {
+  height: 80vh;
+  margin-top: 10vh !important;
 }
 
 .artworkcontainer{
@@ -82,6 +70,7 @@ p{
     padding: 55px 0;
     width: 100%;
     margin: auto;
+    height: 100%;
   }
   &-pic{
     max-width: 350px;
@@ -106,8 +95,13 @@ p{
   }
   &-details{
     padding: 40px;
-    background-color: white;
+    // background-color: white;
     border-radius: 0 0 20px 20px;
+    background-color: white;
+    // background-image: url("https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414139/Uarte/uarte_signum_qs_rr30q2.png");
+    // background-size: cover;
+    ;
+
     .title{
       text-transform: uppercase;
       margin: 0;
