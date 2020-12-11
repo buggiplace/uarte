@@ -1,0 +1,580 @@
+/*
+
+COLOURS:
+#002fa7
+#0000ff
+#f9f8eb
+#777
+#eee
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --top-color: rgba(0, 0, 0, 0.4);
+  --bottom-color: rgba(0, 0, 0, 0.4);
+  --bg-dark: linear-gradient(var(--top-color), var(--bottom-color));
+  --bg-hover: linear-gradient(rgba(0, 47, 168, 0.8), rgba(0, 47, 168, 0.8));
+  --text-translate: translateY(40%);
+  --hover-fontsize: 16px;
+  --hover-fontsize-sm: 11px;
+}
+
+#tribute-info {
+  display: none;
+}
+
+// body {
+//   font-family: "Lato", sans-serif;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.6;
+//   color: #777;
+//   background-color: #eee;
+// }
+
+#main {
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  font-family: "Cinzel", serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% auto;
+}
+
+.bg::after {
+  background-image: url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/yk_splash.jpg);
+}
+
+.text-box {
+  background-color: #fff;
+  color: #002fa7;
+  padding: 0 2.5em 0 2.5em;
+  text-align: center;
+}
+
+#title {
+  text-transform: uppercase;
+  font-size: 60px;
+  letter-spacing: 25px;
+  margin-right: -25px;
+}
+
+.text-box:hover {
+  background-color: #002fa7;
+  box-shadow: 6px 8px 25px 1px rgba(0, 0, 0, 0.35);
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}
+
+.text-box:hover > #title {
+  transform: scale(0.8);
+  transition: 0.3s ease;
+  color: #fff;
+}
+
+/* Middle Section */
+
+.middle-section {
+  background: #f9f8eb;
+  position: relative;
+  min-height: 100vh;
+}
+
+.quote-container {
+  font-size: 25px;
+  padding: 150px 100px;
+  margin: -10px 0;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.quote-resize {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.timeline-container {
+  position: relative;
+  text-align: center;
+  margin: 200px 0;
+  padding: 30px;
+  width: 100%;
+}
+
+.timeline-heading {
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  width: 150px;
+  margin: 0 auto;
+}
+
+hr {
+  border-color: rgba(119, 119, 119, 0.2);
+  margin-top: 5px;
+}
+
+.grid-center {
+  margin: 100px auto;
+  padding: 10px;
+}
+
+.grid-contain {
+  display: grid;
+  grid-template: repeat(3, minmax(300px, 2fr)) / repeat(
+      auto-fit,
+      minmax(400px, 1fr)
+    );
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.grid {
+  background: var(--bg-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid:hover > .year::after {
+  font-size: var(--hover-fontsize);
+  font-weight: normal;
+  display: block;
+  margin: 0 auto;
+  transform: var(--text-translate);
+  width: 80%;
+}
+
+.year {
+  font-size: 50px;
+  color: #eee;
+}
+
+.content1 {
+  background: var(--bg-dark),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/nice.jpg)
+      no-repeat center;
+  background-size: cover;
+}
+
+.content1:hover {
+  background: var(--bg-hover),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/nice.jpg)
+      center;
+  background-size: 120%;
+  align-items: start;
+}
+
+.content1:hover > .year::after {
+  content: "Born in Nice, France to Fred Klein (1898-1990) and Marie Raymond (1908-1989), both painters.";
+}
+
+.content2 {
+  background: var(--bg-dark),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/monotone-symphony.jpg)
+      no-repeat center;
+  background-size: cover;
+}
+
+.content2:hover {
+  background: var(--bg-hover),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/monotone-symphony.jpg)
+      center;
+  background-size: 120%;
+  align-items: start;
+}
+
+.content2:hover > .year::after {
+  content: "Composed 'The Monotone-Silence Symphony' that consisted of a single 20-minute sustained chord followed by a 20-minute silence.";
+}
+
+.content3 {
+  background: var(--bg-dark),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/judo.jpg)
+      no-repeat center;
+  background-size: cover;
+}
+
+.content3:hover {
+  background: var(--bg-hover),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/judo.jpg)
+      center;
+  background-size: 120%;
+  align-items: start;
+}
+
+.content3:hover > .year::after {
+  content: "Yves earns a Black Belt-Dan 1 degree. He starts producing documentary films about judo, showing movements performed by Japanese masters.";
+}
+
+/* IKB-ART content4 */
+.content4 {
+  background: rgba(0, 0, 0, 0.8);
+  background: #002fa7;
+}
+
+.content4:hover {
+  align-items: start;
+}
+
+.content4:hover > .year::after {
+  content: "Beginning of the artist's Blue Period. Painted one of his first Blue Monochromes featuring IKB.";
+}
+
+.content5 {
+  background: var(--bg-dark),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/globe.jpg)
+      no-repeat center;
+  background-size: cover;
+}
+
+.content5:hover {
+  background: var(--bg-hover),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/globe.jpg)
+      center;
+  background-size: 120%;
+  align-items: start;
+}
+
+.content5:hover > .year::after {
+  content: "Yves Klein stated that the Earth was entirely blue. It was on that occasion that he created a Blue Relief globe.";
+}
+
+.content6 {
+  background: var(--bg-dark),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/void_gallery.jpg)
+      no-repeat center;
+  background-size: cover;
+}
+
+.content6:hover {
+  background: var(--bg-hover),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/void_gallery.jpg)
+      center;
+  background-size: 120%;
+  align-items: start;
+}
+
+.content6:hover > .year::after {
+  content: "Immaterial series; Yves Klein creates Le Vide (The Void), removing everything from the Iris Clert Gallery.";
+}
+
+.content7 {
+  background: var(--bg-dark),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/leapVoid.jpg)
+      no-repeat center;
+  background-size: cover;
+}
+
+.content7:hover {
+  background: var(--bg-hover),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/leapVoid.jpg)
+      top;
+  background-size: 120%;
+  align-items: start;
+}
+
+.content7:hover > .year::after {
+  content: "October 19th - Le Saut dans le Vide (Leap into the Void); Yves jumps in the void at 3 Rue Gentil-Bernard in Fontenay-aux-Roses.";
+}
+
+.content8 {
+  background: var(--bg-dark),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/nudebrush.jpg)
+      no-repeat center;
+  background-size: cover;
+}
+
+.content8:hover {
+  background: var(--bg-hover),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/nudebrush.jpg)
+      center;
+  background-size: 120%;
+  align-items: start;
+}
+
+.content8:hover > .year::after {
+  content: "March 9th - Anthropometries series; Klein used nude female models as 'Human Brushes.'";
+}
+
+.content9 {
+  background: var(--bg-dark),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/firepaint.jpg)
+      no-repeat center;
+  background-size: cover;
+}
+
+.content9:hover {
+  background: var(--bg-hover),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/firepaint.jpg)
+      center;
+  background-size: 120%;
+  align-items: start;
+}
+
+.content9:hover > .year::after {
+  content: "Yves Klein produces his Fire paintings at the Gaz de France test centre.";
+}
+
+.content10 {
+  background: var(--bg-dark),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/wedding.jpg)
+      no-repeat center;
+  background-size: cover;
+}
+
+.content10:hover {
+  background: var(--bg-hover),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/wedding.jpg)
+      center;
+  background-size: 120%;
+  align-items: start;
+}
+
+.content10:hover > .year::after {
+  content: "January 21st - Yves marries Rotraut at St Nicolas des Champs. The ceremony, staged by Yves to the smallest detail, includes the presence of Knights of the Order of Saint Sebastian in full gear. ";
+}
+
+.content11 {
+  background: var(--bg-dark),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/venus.jpg)
+      no-repeat center;
+  background-size: cover;
+}
+
+.content11:hover {
+  background: var(--bg-hover),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/venus.jpg)
+      top;
+  background-size: 120%;
+  align-items: start;
+}
+
+.content11:hover > .year::after {
+  content: "Venus Bleue (S41) IKB pigment and synthetic resin on plaster.";
+}
+
+.content12 {
+  background: var(--bg-dark),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/smoke.jpg)
+      no-repeat center;
+  background-size: cover;
+}
+
+.content12:hover {
+  background: var(--bg-hover),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/smoke.jpg)
+      center;
+  background-size: 120%;
+  align-items: start;
+}
+
+.content12:hover > .year::after {
+  content: "June 6th - Dies from a heart attack at the age of 34 in Paris, France.";
+}
+
+/* Bottom Section */
+
+.bottom-section {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 2.5rem;
+}
+
+#quote-bottom {
+  margin: -200px 0;
+  background: var(--bg-dark),
+    url(https://raw.githubusercontent.com/kvizconde/Yves-Klein-Tribute/master/img/hand.jpg)
+      no-repeat top / cover;
+  background-attachment: fixed;
+}
+
+#qb-resize {
+  color: #eee;
+  width: 60%;
+  padding: 40px;
+  outline: 2px solid #eee;
+  outline-offset: -2px;
+}
+
+.learn-container {
+  padding: 150px 100px;
+  text-align: center;
+  margin: 300px 0;
+}
+
+.learn-text {
+  letter-spacing: 1.5px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.learn-primary {
+  display: block;
+  font-size: 30px;
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: #0000ff;
+}
+
+#img-div {
+  padding: 10px;
+  text-align: center;
+}
+
+#image {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+#img-caption {
+  font-style: italic;
+  font-size: 10px;
+  color: rgba(119, 119, 119, 0.4);
+}
+
+/* Footer Section */
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  background-color: #002fa7;
+  padding: 40px 30px;
+}
+
+#footer p {
+  text-align: center;
+  color: #eee;
+}
+
+.fcc {
+  display: block;
+}
+
+/* Responsive Media Queries */
+
+/* iPhone 5 users */
+@media (max-width: 330px) {
+  .grid-contain {
+    grid-template: repeat(12, minmax(200px, 2fr)) / repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+      );
+  }
+
+  .grid:hover > .year::after {
+    font-size: 9px;
+  }
+
+  .quote-resize {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #qb-resize {
+    width: 150%;
+    margin-left: -20%;
+  }
+
+  .learn-container {
+    margin-left: -25%;
+  }
+
+  .learn-text {
+    font-size: 18px;
+    transform: translateX(20%);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-contain {
+    grid-template: repeat(12, minmax(200px, 2fr)) / repeat(
+        auto-fit,
+        minmax(300px, 1fr)
+      );
+  }
+
+  .grid:hover > .year::after {
+    font-size: var(--hover-fontsize-sm);
+  }
+
+  .quote-resize {
+    width: 95%;
+  }
+
+  #qb-resize {
+    width: 95%;
+  }
+
+  .learn-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 905px) and (min-width: 500px) {
+  .grid-contain {
+    grid-template: repeat(12, minmax(300px, 1fr)) / repeat(
+        auto-fit,
+        minmax(400px, 1fr)
+      );
+  }
+}
+
+@media (max-width: 1315px) and (min-width: 905px) {
+  .grid-contain {
+    grid-template: repeat(6, minmax(300px, 1fr)) / repeat(
+        auto-fit,
+        minmax(400px, 1fr)
+      );
+  }
+}
+
+@media (max-width: 1725px) and (min-width: 1315px) {
+  .grid-contain {
+    grid-template: repeat(4, minmax(300px, 1fr)) / repeat(
+        auto-fit,
+        minmax(400px, 1fr)
+      );
+  }
+}
+
+@media (min-width: 1725px) {
+  .grid-contain {
+    grid-template: repeat(3, minmax(300px, 1fr)) / repeat(
+        auto-fit,
+        minmax(400px, 1fr)
+      );
+  }
+}

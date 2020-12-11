@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'imprint', to: 'pages#imprint'
   get 'contact', to: 'pages#contact'
+  get 'about_uarte', to: 'pages#about_uarte'
   # resources :artworks
   # resources :artists
   get "artworks/", to: "artworks#index", as: :artworks

@@ -157,8 +157,8 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
 }
 
 .b-menu {
-  background: linear-gradient(to bottom, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 100%);
-  // background: color(primary);
+  // background: linear-gradient(to bottom, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 100%);
+  background: color(primary);
   border: color(primary) solid $b-border-width;
   border-radius: $b-border-radius;
   cursor: pointer;

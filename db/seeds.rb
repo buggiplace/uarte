@@ -22,9 +22,9 @@ puts "Old Seeds destroyed"
 puts 'Create Artworks'
 
 puts 'Create 1 artist'
-uarte = Artist.create!(first_name: 'Klaus',
-                     last_name: 'Klausinger',
-                     artist_name: 'KK ART',
+uarte = Artist.create!(first_name: 'Ulrich',
+                     last_name: 'Bugiel',
+                     artist_name: 'Uarte',
                      biography: "A long life")
 
 
@@ -33,7 +33,7 @@ puts 'Create Artworks'
 
 require 'csv'
 csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
-filepath = Rails.root.join('db', 'uarte_csv_v3.csv')
+filepath = Rails.root.join('db', 'uarte_csv_v4.csv')
 
     CSV.foreach(filepath, csv_options) do |row|
 
