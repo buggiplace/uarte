@@ -33,7 +33,7 @@ puts 'Create Artworks'
 
 require 'csv'
 csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
-filepath = Rails.root.join('db', 'uarte_csv_v4.csv')
+filepath = Rails.root.join('db', 'uarte_csv_v6.csv')
 
     CSV.foreach(filepath, csv_options) do |row|
 
@@ -49,6 +49,7 @@ filepath = Rails.root.join('db', 'uarte_csv_v4.csv')
         )
       image_file = URI.open(art.picture_url)
       art.photo.attach(io: image_file, filename: 'xxx', content_type: 'xxx')
+      puts "1 Artwork created"
   end
 
 puts "Artwork Seed done - #{Artwork.count} added"
