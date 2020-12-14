@@ -27,7 +27,7 @@ $b-border-radius: 50%; //Change the border radius of the menu
 $b-trans-speed: .4s; //Transition speed settings
 $b-transition: all $b-trans-speed ease; //Transitions
 
-$b-font-size: 20px; //Font size of brand and links
+$b-font-size: 17px; //Font size of brand and links
 $b-font-family: "Nunito", "Helvetica", "sans-serif"; //Font family of the brand and links
 $b-font-weight: 300; //Font weight of brand and links
 $b-txt-pad: 30px; //Left padding on both brand and links
@@ -90,6 +90,14 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
 //   }
 // }
 
+.b-wrapper {
+  position: fixed;
+  z-index: 20;
+  height: 100%;
+  max-width: 300px;
+}
+
+
 .b-nav {
   position: absolute;
   z-index: 11;
@@ -120,12 +128,15 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
   &.open {
     visibility: visible;
     // background-color: rgba(255,0,0,0.1);
-    background: linear-gradient(to bottom, rgba(255,0,0,0.6) 0%, rgba(255,255,0,0.6) 100%);
+    background: linear-gradient(to bottom, rgba(255,0,0,0.8) 0%, rgba(255,255,0,0.8) 100%);
     // background: linear-gradient(45deg, rgba(255,0,0,0.6) 0%, rgba(255,255,0,0.6) 50%);
     // text-shadow: 0px 0px 20px rgba(0,0,0,0.5);
     border-radius:20px;
-    top: 55px;
+    top: 15px;
     left: 55px;
+    // width: 400px;
+    // height: 320px;
+    z-index: 18;
 
     li {
       animation-duration: $b-trans-speed;
@@ -170,7 +181,6 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
   transition: $b-transition;
   user-select: none;
   width: $b-height;
-  z-index: 12;
   overflow: hidden;
 
   &:hover {
@@ -220,7 +230,7 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
   text-decoration: none;
   top: -$b-line-height;
   transition: $b-transition;
-  z-index: 13;
+  z-index: 21;
 }
 
 .b-container {
@@ -231,7 +241,7 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
   position: fixed;
   top: 35px;
   left: 35px;
-  z-index: 12;
+  z-index: 21;
 
   &:hover:not(.open) {
     .bun-top,
@@ -265,5 +275,51 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
     .b-brand {
       color: color(complement);
     }
+  }
+}
+
+
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .b-nav.open {
+    width: 70vw;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .b-nav.open {
+    width: 70vw;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 700px) {
+  .b-nav.open {
+   width: 30vw;
+  }
+}
+
+
+// second Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .b-nav.open {
+   width: 25vw;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .b-nav.open {
+    width: 25vw;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .b-nav.open {
+    width: 20vw;
   }
 }
