@@ -27,8 +27,9 @@ $discount: #fe6168;
 }
 
 .product-view {
-  height: 80vh;
+  height: 75vh;
   margin-top: 10vh !important;
+  // margin-bottom: 50px !important;
 }
 
 .artworkcontainer{
@@ -83,6 +84,7 @@ p{
       -moz-filter: drop-shadow(0px 0px 30px #000000);
     border: 1px solid transparent;
     border-radius: 20px;
+
   }
   &-logo{
     max-width: 80px;
@@ -327,24 +329,40 @@ p{
 }
 
 .artwork-footer {
-  height:35px;
+
+  height:85px;
   padding:10px;
    position: fixed;
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: $bg;
+   background-color: gray;
    color: black;
    text-align: center;
    font-size: 0.7rem;
+   word-wrap: break-word;
    // border-radius: 20px;
+   overflow: hidden;
+
 }
 
+.artwork-footer-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  justify-content:between;
 
-#artwork-footer-items a{
+}
+
+.artwork-footer-items a{
   color: black !important;
   text-decoration: none;
+  word-wrap: break-word;
+  padding: 0px 100px;
+
 }
+
+
 
 // .artworkpicture {
 //   width: 100%;
