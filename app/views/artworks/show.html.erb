@@ -48,21 +48,25 @@
         <p><%= @artwork.specifications %></p>
       </div>
       </div>
+          <div class="artwork-specs">
+
+      </div>
     </div>
-
   </div>
-</div>
 
-<div class="container d-flex justify-content-around align-items-center">
-  <% if @artwork.previous %>
-    <%= link_to "zum letzten Kunstwerk: (#{@artwork.previous.title})", @artwork.previous %>
-  <% end %>
-    <%= link_to "Zurück zur Übersicht", artworks_path %>
-  <% if @artwork.next %>
-    <%= link_to "zum nächsten Kunstwerk: (#{@artwork.next.title})", @artwork.next %>
-  <% end %>
-</div>
-
+<div class="container">
+     <div class="artwork-footer">
+      <div class="d-flex justify-content-around" id="artwork-footer-items">
+         <% if @artwork.previous %>
+           <%= link_to "letztes Kunstwerk: (#{@artwork.previous.title})", @artwork.previous %>
+           <% end %>
+         <%= link_to "Übersicht", artworks_path %>
+         <% if @artwork.next %>
+            <%= link_to "nächstes Kunstwerk: (#{@artwork.next.title})", @artwork.next %>
+         <% end %>
+      </div>
+      </div>
+  </div>
 
 
 <!-- <div class="container">
