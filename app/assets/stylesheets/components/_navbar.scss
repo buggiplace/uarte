@@ -1,12 +1,53 @@
 .navbar-lewagon {
-  justify-content: space-between;
+  justify-content: space-around;
   background: white;
+  height:85px;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+
+
+// .artwork-footer {
+
+//   height:85px;
+//   padding:10px;
+//    position: fixed;
+//    left: 0;
+//    bottom: 0;
+//    width: 100%;
+//    background-color: gray;
+//    color: black;
+//    text-align: center;
+//    font-size: 0.7rem;
+//    word-wrap: break-word;
+//    // border-radius: 20px;
+//    overflow: hidden;
+
+// }
+
+// .artwork-footer-items {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-gap: 5px;
+//   justify-content:between;
+//   flex-basis:  | auto;
+// }
+
+.nav-item a{
+  color: black !important;
+  text-decoration: none;
+  font-size: 0.7rem;
+  // word-wrap: break-word;
+  // padding: 0px 100px;
+
 }

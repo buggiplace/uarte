@@ -1,4 +1,4 @@
-<div class="container product-view">
+<div class="container product-view pb-3">
   <div class="product-image">
     <img src="<%= cl_image_path @artwork.photo.key, height: 400, width: 300, crop: :pad %>" alt="" class="product-pic">
   </div>
@@ -54,18 +54,29 @@
     </div>
   </div>
 
-<div class="container">
-     <div class="artwork-footer">
-      <div class="d-flex justify-content-around" id="artwork-footer-items">
+<div class="container mt-5">
+       <div class="artwork-footer">
+      <div class="artwork-footer-items">
          <% if @artwork.previous %>
-           <%= link_to "letztes Kunstwerk: (#{@artwork.previous.title})", @artwork.previous %>
+           <div class="d-flex flex-column align-items-center">
+           <%= link_to "zurück zu #{@artwork.previous.title}", @artwork.previous %>
+            <%= cl_image_tag @artwork.previous.photo.key, height: 45, width: 45, crop: :pad %>
+            </div>
            <% end %>
+           <div class="d-flex flex-column align-items-center">
          <%= link_to "Übersicht", artworks_path %>
+          <%= image_tag "https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414139/Uarte/uarte_signum_qs_rr30q2.png", :height=>45, :crop=>:fit %>
+
+
+        </div>
          <% if @artwork.next %>
-            <%= link_to "nächstes Kunstwerk: (#{@artwork.next.title})", @artwork.next %>
+         <div class="d-flex flex-column align-items-center">
+            <%= link_to "weiter zu #{@artwork.next.title}", @artwork.next %>
+            <%= cl_image_tag @artwork.next.photo.key, height: 45, width: 45, crop: :pad %>
+            </div>
          <% end %>
       </div>
-      </div>
+  </div>
   </div>
 
 
