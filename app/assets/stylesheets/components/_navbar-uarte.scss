@@ -136,6 +136,7 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
     left: 55px;
     // width: 400px;
     // height: 320px;
+    overflow: hidden;
     z-index: 18;
 
     li {
