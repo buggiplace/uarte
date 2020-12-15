@@ -329,7 +329,7 @@ p{
 }
 
 .artwork-footer {
-
+  display: flex;
   height:85px;
   padding:10px;
    position: fixed;
@@ -347,11 +347,13 @@ p{
 }
 
 .artwork-footer-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5px;
-  justify-content:between;
-
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-gap: 5px;
+  display: flex;
+  // justify-content: between;
+  width: 150px;
+  max-width: 100px;
 }
 
 .artwork-footer-items a{
@@ -359,6 +361,7 @@ p{
   text-decoration: none;
   word-wrap: break-word;
   padding: 0px 100px;
+  white-space: nowrap;
 
 }
 

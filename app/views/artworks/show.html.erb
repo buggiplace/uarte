@@ -55,30 +55,35 @@
   </div>
 
 <div class="container mt-5">
-       <div class="artwork-footer">
-      <div class="artwork-footer-items">
-         <% if @artwork.previous %>
-           <div class="d-flex flex-column align-items-center">
-           <%= link_to "zurück zu #{@artwork.previous.title}", @artwork.previous %>
-            <%= cl_image_tag @artwork.previous.photo.key, height: 45, width: 45, crop: :pad %>
-            </div>
-           <% end %>
-           <div class="d-flex flex-column align-items-center">
-         <%= link_to "Übersicht", artworks_path %>
-          <%= image_tag "https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414139/Uarte/uarte_signum_qs_rr30q2.png", :height=>45, :crop=>:fit %>
+<div>
+           <div class="artwork-footer d-flex justify-content-around">
 
-
-        </div>
-         <% if @artwork.next %>
-         <div class="d-flex flex-column align-items-center">
-            <%= link_to "weiter zu #{@artwork.next.title}", @artwork.next %>
-            <%= cl_image_tag @artwork.next.photo.key, height: 45, width: 45, crop: :pad %>
+             <% if @artwork.previous %>
+                   <div class="d-flex flex-column align-items-center artwork-footer-items">
+                   <%= link_to @artwork.previous, class: "d-flex flex-column" do %>
+                   <%= "#{@artwork.previous.title}" %>
+                    <%= cl_image_tag @artwork.previous.photo.key, height: 35, width: 35, crop: :pad %>
+                    <% end %>
+                    </div>
+               <% end %>
+               <div class="d-flex flex-column align-items-center artwork-footer-items">
+                  <%= link_to artworks_path, class: "d-flex flex-column" do %>
+                  Übersicht
+                  <%= image_tag "https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414139/Uarte/uarte_signum_qs_rr30q2.png", :height=>30, :width=>30, :crop=>:fit %>
+                  <% end %>
             </div>
-         <% end %>
+             <% if @artwork.next %>
+             <div class="d-flex flex-column align-items-center artwork-footer-items">
+                   <%= link_to @artwork.next, class: "d-flex flex-column" do %>
+                   <%= "#{@artwork.next.title}" %>
+                <%= cl_image_tag @artwork.next.photo.key, height: 35, width: 35, crop: :pad %>
+                <% end %>
+                </div>
+             <% end %>
+
       </div>
+</div>
   </div>
-  </div>
-
 
 <!-- <div class="container">
   <%#= cl_image_tag @artwork.photo.key, height: 800, width: 600, crop: :pad %>
