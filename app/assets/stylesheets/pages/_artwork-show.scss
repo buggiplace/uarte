@@ -29,6 +29,7 @@ $discount: #fe6168;
 .product-view {
   height: 75vh;
   margin-top: 10vh !important;
+  // overflow: hidden;
   // margin-bottom: 50px !important;
 }
 
@@ -75,6 +76,7 @@ p{
   }
   &-pic{
     max-width: 350px;
+    max-height: 90%;
     position: relative;
     left: 0;
     // top: -100px;
@@ -360,8 +362,8 @@ p{
   color: black !important;
   text-decoration: none;
   word-wrap: break-word;
-  padding: 0px 100px;
   white-space: nowrap;
+
 }
 
 .artwork-footer-items img{
