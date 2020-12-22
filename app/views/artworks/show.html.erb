@@ -1,6 +1,6 @@
-<% content_for :meta_title, "#{@artwork.title} is on #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_title, "#{@artwork.title} by #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, @artwork.description %>
-<% content_for :meta_image, cl_image_path(@artwork.photo.path) %>
+<% content_for :meta_image, cl_image_path(@artwork.photo.key) %>
 
 
 <div class="container product-view pb-3">
