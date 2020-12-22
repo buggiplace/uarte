@@ -336,7 +336,7 @@ p{
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: gray;
+   background-color:  rgb(220,220,220);
    color: black;
    text-align: center;
    font-size: 0.7rem;
@@ -362,10 +362,12 @@ p{
   word-wrap: break-word;
   padding: 0px 100px;
   white-space: nowrap;
-
 }
 
-
+.artwork-footer-items img{
+  align-self: center;
+  margin-top: 0.5rem;
+}
 
 // .artworkpicture {
 //   width: 100%;

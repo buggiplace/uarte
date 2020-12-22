@@ -50,44 +50,9 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
   }
 }
 
-@keyframes slideOutLeft {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
 
-  100% {
-    transform: translate3d(-250px, 0, 0);
-    visibility: hidden;
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-// body {
-//   &:after {
-//     background: color(primary);
-//     content: '';
-//     height: 100%;
-//     left: 0;
-//     opacity: 0;
-//     overflow: auto;
-//     padding: 0;
-//     position: absolute;
-//     top: 0;
-//     transition: $b-transition;
-//     width: 100%;
-//   }
-
-//   &.open {
-//     overflow: hidden;
-//   }
-
-//   &.open:after {
-//     opacity: 1;
-//     visibility: visible;
-//   }
+// * {
+//   box-sizing: border-box;
 // }
 
 .b-wrapper {
@@ -114,15 +79,14 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
     transform: translateX(-250px);
   }
 
-  li:not(.open) {
-    animation-duration: $b-trans-speed;
-    animation-fill-mode: both;
-    animation-name: slideOutLeft;
-  }
+  // li:not(.open) {
+  //   animation-duration: $b-trans-speed;
+  //   animation-fill-mode: both;
+  //   animation-name: slideOutLeft;
+  // }
 
   li:first-child {
     padding-top: $b-txt-pad-top;
-
   }
 
   &.open {
