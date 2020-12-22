@@ -1,3 +1,8 @@
+<% content_for :meta_title, "#{@artwork.title} by #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_description, @artwork.description %>
+<% content_for :meta_image, cl_image_path(@artwork.photo.key) %>
+
+
 <div class="container product-view pb-3">
   <div class="product-image">
     <img src="<%= cl_image_path @artwork.photo.key, height: 400, width: 300, crop: :pad %>" alt="" class="product-pic">
@@ -62,6 +67,7 @@
                    <div class="d-flex flex-column align-items-center artwork-footer-items">
                    <%= link_to @artwork.previous, class: "d-flex flex-column" do %>
                    <%= "#{@artwork.previous.title}" %>
+                   <i class="fas fa-arrow-left"></i>
                     <%= cl_image_tag @artwork.previous.photo.key, height: 35, width: 35, crop: :pad %>
                     <% end %>
                     </div>
@@ -69,6 +75,7 @@
                <div class="d-flex flex-column align-items-center artwork-footer-items">
                   <%= link_to artworks_path, class: "d-flex flex-column" do %>
                   Übersicht
+                  <i class="fas fa-arrow-up"></i>
                   <%= image_tag "https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414139/Uarte/uarte_signum_qs_rr30q2.png", :height=>30, :width=>30, :crop=>:fit %>
                   <% end %>
             </div>
@@ -76,6 +83,7 @@
              <div class="d-flex flex-column align-items-center artwork-footer-items">
                    <%= link_to @artwork.next, class: "d-flex flex-column" do %>
                    <%= "#{@artwork.next.title}" %>
+                   <i class="fas fa-arrow-right"></i>
                 <%= cl_image_tag @artwork.next.photo.key, height: 35, width: 35, crop: :pad %>
                 <% end %>
                 </div>

@@ -1,0 +1,5 @@
+meta_product_name: "UARTE"
+meta_title: "Artworks by UARTE"
+meta_description: "A collection of the deceased artist UARTE 1946-2020"
+meta_image: "cover.png" # should exist in `app/assets/images/`
+
