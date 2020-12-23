@@ -1,3 +1,20 @@
+
+<% if browser.device.mobile? %>
+<!-- invest some time to navigate through the artworks -->
+  <div class="d-flex justify-content-center mt-5">
+    <div class="cards-grid">
+          <% @artworks.each do |art| %>
+          <%= link_to artwork_path(art) do%>
+            <div class="flip">
+                <div class="front" style="background-image: url(<%= cl_image_path art.photo.key, height: 400, width: 800, crop: :pad  %>)">
+                </div>
+            </div>
+          <% end %>
+            <p class="flip-mobile" ><%= art.title %></p>
+          <% end %>
+        </div>
+  </div>
+<% else %>
 <!-- invest some time to navigate through the artworks -->
   <div class="d-flex justify-content-center mt-5">
     <div class="cards-grid">
@@ -5,7 +22,6 @@
           <%= link_to artwork_path(art) do%>
             <div class="flip">
                   <div class="front" style="background-image: url(<%= cl_image_path art.photo.key, height: 400, width: 800, crop: :pad  %>)">
-                   <!-- <h1 class="text-shadow"><%#= art.title %></hi> -->
                 </div>
                 <div class="back d-flex justify-content-between">
                    <h2><%= art.title %></h2>
@@ -21,9 +37,4 @@
           <% end %>
         </div>
   </div>
-
-
-<!-- <div>
-  <%#= link_to "Back to home", root_path, class: "btn btn-primary" %>
-</div> -->
-
+  <%end  %>
