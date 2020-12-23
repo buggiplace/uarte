@@ -14,34 +14,41 @@
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .about-uarte-text {
-    padding-top: 110px;
+    padding-top: 50px;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .about-uarte-text {
-    padding-top: 340px;
+    padding-top: 5px;
   }
+  .about-uarte-content p {
+    font-size: 13px;
+  }
+
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .about-uarte-text {
-    padding-top: 350px;
+    padding-top: 280px;
+  }
+   .about-uarte-content p {
+    font-size: 17px;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .about-uarte-text {
-    padding-top: 400px;
+    padding-top: 200px;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .about-uarte-text {
-    padding-top: 450px;
+    padding-top: 250px;
   }
 }
