@@ -33,7 +33,7 @@ puts 'Create Artworks'
 
 require 'csv'
 csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
-filepath = Rails.root.join('db', 'uarte_csv_v9.csv')
+filepath = Rails.root.join('db', 'uarte_csv_v10.csv')
 
     CSV.foreach(filepath, csv_options) do |row|
 
