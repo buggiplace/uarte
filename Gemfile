@@ -31,10 +31,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
-
+gem "browser"
 gem 'cloudinary', '~> 1.16.0'
 gem 'faker'
-
 gem 'friendly_id', '~> 5.4.0'
 
 # gem 'compass-rails'
