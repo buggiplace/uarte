@@ -12,27 +12,8 @@
     <header>
       <h1 class="title"><%= @artwork.title %></h1>
       <span class="colorCat"><%= @artwork.artwork_type %></span>
-      <%# if @artwork.short_description? %>
-      <!-- <p><%#= @artwork.short_description %></p> -->
-      <!-- <span class="colorCat"><%= @artwork.short_description %></span> -->
-      <%# else  %>
-      <!-- <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit.</p> -->
-      <%# end  %>
-      <!-- <span class="colorCat"><%= @artwork.short_description %></span> -->
-
-<!--       <div class="price">
-        <span class="before">$150</span>
-        <span class="current">$144.99</span>
-      </div> -->
       <div class="rate">
-        <!-- <img src="https://res.cloudinary.com/dvoduvlcz/image/upload/v1607414139/Uarte/uarte_signum_qs_rr30q2.png" alt="" class="product-logo"> -->
         <span class="artist-name">by <%= @artwork.artist.artist_name %></span>
-<!--         <a href="#!" class="active">★</a>
-        <a href="#!" class="active">★</a>
-        <a href="#!" class="active">★</a>
-        <a href="#!">★</a>
-        <a href="#!">★</a> -->
-
       </div>
     </header>
     <article>
@@ -59,10 +40,10 @@
     </div>
   </div>
 
+
 <div class="container mt-5">
 <div>
            <div class="artwork-footer d-flex justify-content-around">
-
              <% if @artwork.previous %>
                    <div class="d-flex flex-column align-items-center artwork-footer-items">
                    <%= link_to @artwork.previous, class: "d-flex flex-column" do %>
