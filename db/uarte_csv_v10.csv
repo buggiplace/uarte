@@ -1,14 +1,4 @@
 title,artwork_type,short_description,description,specifications,size,picture_url,artist_id:
-Gelb Grüner Stuhl,Wandobjekt,"Wächter von Vor-, Haupt- und Nachspeise","Wächter von Vor-, Haupt- und Nachspeise","16 quadratische Holzplatten auf einer Trägerplatte, Holz, Kunstharzlack
-
-",hb: 107 x 107 cm,http://uarte.de/fotos_kunst/web_24_gelb_gruener_stuhl.jpg,uarte.id
-Tisch,Gebrauchsmöbel,,"wenn man lange Zeit keinen Couchtisch findet, dann macht man ihn sich selbst","Stahl, geschweißt, Kunstharzlack, Glas, Nylon, div.","hbt: 50 x 135 x 84,5 cm",http://uarte.de/fotos_kunst/web_29_tisch.jpg,uarte.id
-Sinus,Wandobjekt,"""=$E$1*SIN($E$3*(A8))+$E$2""","""=$E$1*SIN($E$3*(A8))+$E$2""","Holz, Acryllack",hb: 77 x 77 cm,http://uarte.de/fotos_kunst/web_38_sinus.jpg,uarte.id
-Applik Blau Rot,Applik,,wohin mit den eiligen Utensilien des täglichen Lebens?,,hbt: 21 x 11 x 9 cm,http://uarte.de/fotos_kunst/web_45_applik_blau_rot.jpg,uarte.id
-Applik Gelb Grün,Applik,,wohin mit den eiligen Utensilien des täglichen Lebens? Schicke Applicke? hier liegt ein Brille drauf,,hbt: 20 x 17 x 6 cm,http://uarte.de/fotos_kunst/web_46_applik_gelb_gruen.jpg,uarte.id
-Applik Blau Blau,Applik,,wohin mit den eiligen Utensilien des täglichen Lebens? Schicke Applicke? hier liegen mal ein paar Brillen drauf,,hbt: 21 x 20 x 11 cm,http://uarte.de/fotos_kunst/web_48_applik_blau_blau.jpg,uarte.id
-Applik mit Gans,Applik,von hier oben kann unsere Gans sich mal umkucken,von hier oben kann unsere Gans sich mal umkucken,,hbt: 29 x 25 13 cm,http://uarte.de/fotos_kunst/web_54_applik_mit_gans.jpg,uarte.id
-Ich,,Der Täter und sein Opfer,Der Täter und sein Opfer,,180 x106 x 65,http://uarte.de/fotos_kunst/web_mitholz_2.jpg,uarte.id
 Rizzi,Rahmen,"James Rizzi fand den Rahmen einst so nett, daß er ihn kaufen wollte","James Rizzi fand den Rahmen einst so nett, daß er ihn kaufen wollte","Holz, Kunstharzlack, Blattgold, Blattsilber",hbt: 85 x 80 x 6 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1607452466/Uarte/01-Rizzi_j58aor.png,uarte.id
 Untitled,Rahmen,,"des einen Leid, des anderen Freud´ - wer sich von der festen Basis entfernt, lebt gefährlich","Holz, Kunstharzlack, Geduld, Blattgold",hb: 135 x 76 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1608731084/Uarte/02-Untitled_e2juwh.png,uarte.id
 Gold,Rahmen,,"Salvadores Kartenspiel sah sich unterrepräsentiert - voilá! auch wenn gewisse Leute aus dem Vogelsberg meinen, daß links unten das sei eine Seifenschale, es ist keine!",Blattgold auf Holz,hbt: 114 x 77 x 10 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1607439637/Uarte/03-Gold_gzk3oc.png,uarte.id
@@ -36,9 +26,9 @@ Ualla Moi,Wandobjekt,"der warme Abendwind entführt das namibische Wort ""moi"" 
 Packed night,Gebrauchsmöbel,Geschenk an die Begleiterin der Nacht,Geschenk an die Begleiterin der Nacht,"Holz, Acryllack, Glas, (gepimpter Sperrmüllfund)
 
 ",,https://res.cloudinary.com/dvoduvlcz/image/upload/v1607760308/39_Komode_ausgeschnitten_rqegqb.png,uarte.id
-24 Chairs,Wandobjekt,,"stelle 24 Menschen vor einen Stuhl und Du wirst sehen, daß Du 24 unterschiedliche Beschreibungen erhälst","Holz, Acryllack",hb: 72 x 104 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1608733625/Uarte/40-24_chairs_uz6un9.png,uarte.id
+24 Chairs,Wandobjekt,,"stelle 24 Menschen vor einen Stuhl und Du wirst sehen, daß Du 24 unterschiedliche Beschreibungen erhälst","Holz, Acryllack",hb: 72 x 104 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1608735726/Uarte/40-24_chairs_dhqtye.png,uarte.id
 Eine Stadt,Wandobjekt,über die Stadt fliegt die Krähe und schaut dem Treiben der Ameisen zu,über die Stadt fliegt die Krähe und schaut dem Treiben der Ameisen zu,Acryl auf Holz 55 x 63 cm,hb: 63 x 55 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1608733747/Uarte/44_Eine_Stadt_ya4cl5.png,uarte.id
 """213""",Wandobjekt,,"die ""checked flag""sortiert aus dem Fahrerfeld die besten drei - die Gladiatoren stehen auf dem Treppchen, vom Zuschauer aus gesehen der 2. links, der 1. in der Mitte und der 3. rechts. ""213"" heißt das Wandobjekt.","Nußbaum, Kunstharzlack",,https://res.cloudinary.com/dvoduvlcz/image/upload/v1608656283/Uarte/49_213b_afuhzf.png,uarte.id
 Surabaya,Stuhl,,"aus Holzabfällen geleimter, geschliffener, polierter, lackierter Stuhl. Man könnte auch sagen:""pimped waste""","Holz, Leim und Schleifstaub",,https://res.cloudinary.com/dvoduvlcz/image/upload/v1608734222/Uarte/55-Surabaya_hwanwx.png,uarte.id
-Griffliches,Treppengeländer,was ist eine Treppe ohne ihr Geländer,was ist eine Treppe ohne ihr Geländer,,,https://res.cloudinary.com/dvoduvlcz/image/upload/v1608734560/Uarte/14-Treppe_sz7obv.png,uarte.id
+Griffliches,Treppengeländer,was ist eine Treppe ohne ihr Geländer,was ist eine Treppe ohne ihr Geländer,,,https://res.cloudinary.com/dvoduvlcz/image/upload/v1608735566/Uarte/14-Treppe_pzroxf.png,uarte.id
 Kommode,Wandobjekt,,"Es sollte eigentlich nur ein kleines Telefontischchen werden, nach 300 Stunden Arbeit (blood, sweat …) kam das da heraus","Holz, Acryllack",hbt: 77 x 86 x 47 cm,https://res.cloudinary.com/dvoduvlcz/image/upload/v1608734001/Uarte/20-Kommo-2_ewrtjp.png,uarte.id
